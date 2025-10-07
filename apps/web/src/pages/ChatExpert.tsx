@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { X, Lightbulb, Shield, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
+import axios from 'axios'; // Importing Axios for HTTP requests
 
 export default function ChatExpert() {
   const { t } = useTranslation();
@@ -55,6 +56,7 @@ export default function ChatExpert() {
     setContextReport(report);
   };
 
+  // Modified function to make API call to Flask API
   const handleSend = async (content: string) => {
     const userMessage: ChatMessage = {
       id: `user-${Date.now()}`,
@@ -67,8 +69,17 @@ export default function ChatExpert() {
     setLoading(true);
 
     try {
-      const response = await sendChatMessage(content, 'expert', { reportId: reportId || undefined });
-      setMessages(prev => [...prev, response]);
+      // Replace with the Flask API endpoint
+      const response = await axios.post('https://fasalsaathi-ai.onrender.com/get', {
+        msg: content,
+      });
+      const botResponse = {
+        id: `assistant-${Date.now()}`,
+        role: 'assistant',
+        content: response.data.answer,
+        timestamp: new Date().toISOString()
+      };
+      setMessages(prev => [...prev, botResponse]);
     } catch (error) {
       toast.error('Failed to send message');
     } finally {
