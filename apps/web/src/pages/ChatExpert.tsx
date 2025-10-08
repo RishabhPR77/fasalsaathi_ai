@@ -70,7 +70,7 @@ export default function ChatExpert() {
 
     try {
       // Replace with the Flask API endpoint
-      const response = await axios.post('https://fasalsaathi-ai.onrender.com/get', {
+      const response = await axios.post('https://angelia-swirlier-incommunicably.ngrok-free.dev/get', {
         msg: content,
       });
       const botResponse: ChatMessage = {
