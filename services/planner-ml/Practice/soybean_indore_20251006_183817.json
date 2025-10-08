@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "version": "1.0",
+    "generated_at": "2025-09-26",
+    "notes": "Dummy stage-level dataset for Wheat (Central India). Values are plausible and for prototyping only."
+  },
+  "crop": "Soybean",
+  "region": "Central India",
+  "total_duration_days": 105,
+  "stages": [
+    {
+      "name": "Sowing & Germination",
+      "duration_days": 5,
+      "importance_weight": 1.4,
+      "ideal": {
+        "tmin_c": [
+          21.98583221435547
+        ],
+        "tmax_c": [
+          30.940629959106445
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          4.459171295166016
+        ],
+        "wind_kmph": [
+          5.3559064865112305
+        ],
+        "solar_wm2": [
+          590
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Seedling / Emergence",
+      "duration_days": 10,
+      "importance_weight": 1.2,
+      "ideal": {
+        "tmin_c": [
+          22.041641235351562
+        ],
+        "tmax_c": [
+          30.959564208984375
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          4.968631267547607
+        ],
+        "wind_kmph": [
+          4.904836177825928
+        ],
+        "solar_wm2": [
+          574
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Tillering",
+      "duration_days": 15,
+      "importance_weight": 1.6,
+      "ideal": {
+        "tmin_c": [
+          23.983264923095703
+        ],
+        "tmax_c": [
+          30.948471069335938
+        ],
+        "rh_pct": [
+          64
+        ],
+        "rain_mm": [
+          5.080795764923096
+        ],
+        "wind_kmph": [
+          5.137338161468506
+        ],
+        "solar_wm2": [
+          577
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Stem Elongation",
+      "duration_days": 12,
+      "importance_weight": 1.4,
+      "ideal": {
+        "tmin_c": [
+          23.988529205322266
+        ],
+        "tmax_c": [
+          31.106332778930664
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          4.785619735717773
+        ],
+        "wind_kmph": [
+          5.117997169494629
+        ],
+        "solar_wm2": [
+          574
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Booting",
+      "duration_days": 8,
+      "importance_weight": 1.5,
+      "ideal": {
+        "tmin_c": [
+          25.928712844848633
+        ],
+        "tmax_c": [
+          30.909988403320312
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          4.580654144287109
+        ],
+        "wind_kmph": [
+          5.08509635925293
+        ],
+        "solar_wm2": [
+          566
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Heading",
+      "duration_days": 6,
+      "importance_weight": 1.5,
+      "ideal": {
+        "tmin_c": [
+          25.95870018005371
+        ],
+        "tmax_c": [
+          31.063064575195312
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          4.999818325042725
+        ],
+        "wind_kmph": [
+          4.855966567993164
+        ],
+        "solar_wm2": [
+          577
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Flowering / Anthesis",
+      "duration_days": 10,
+      "importance_weight": 1.6,
+      "ideal": {
+        "tmin_c": [
+          12,
+          18
+        ],
+        "tmax_c": [
+          16,
+          28
+        ],
+        "rh_pct": [
+          45,
+          70
+        ],
+        "rain_mm": [
+          0,
+          5
+        ],
+        "wind_kmph": [
+          0,
+          20
+        ],
+        "solar_wm2": [
+          200,
+          380
+        ],
+        "et0_mm": [
+          2.2,
+          3.5
+        ],
+        "soil_moisture_pct": [
+          18,
+          24
+        ],
+        "soil_temp_c": [
+          12,
+          18
+        ],
+        "vpd_kpa": [
+          0.6,
+          1.2
+        ],
+        "leaf_wetness_hours": [
+          0,
+          2
+        ],
+        "uv_index": [
+          2,
+          7
+        ],
+        "gdd_base10_c_per_day": [
+          5,
+          10
+        ]
+      },
+      "forecasted": {
+        "tmin_c": 18,
+        "tmax_c": 30,
+        "rh_pct": 52,
+        "rain_mm": 3,
+        "wind_kmph": 17,
+        "solar_wm2": 310,
+        "et0_mm": 3.1,
+        "soil_moisture_pct": 18,
+        "soil_temp_c": 18,
+        "vpd_kpa": 1.2,
+        "leaf_wetness_hours": 1,
+        "uv_index": 7,
+        "gdd_base10_c_per_day": 8.4,
+        "ndvi": 0.68,
+        "pest_disease_risk_hint": {
+          "heat_stress": 0.3,
+          "fungal_blotch": 0.15
+        }
+      }
+    },
+    {
+      "name": "Grain Filling (Milk)",
+      "duration_days": 10,
+      "importance_weight": 1.6,
+      "ideal": {
+        "tmin_c": [
+          10,
+          16
+        ],
+        "tmax_c": [
+          18,
+          30
+        ],
+        "rh_pct": [
+          40,
+          70
+        ],
+        "rain_mm": [
+          0,
+          6
+        ],
+        "wind_kmph": [
+          0,
+          22
+        ],
+        "solar_wm2": [
+          200,
+          400
+        ],
+        "et0_mm": [
+          2.2,
+          3.8
+        ],
+        "soil_moisture_pct": [
+          16,
+          22
+        ],
+        "soil_temp_c": [
+          10,
+          18
+        ],
+        "vpd_kpa": [
+          0.7,
+          1.4
+        ],
+        "leaf_wetness_hours": [
+          0,
+          2
+        ],
+        "uv_index": [
+          2,
+          8
+        ],
+        "gdd_base10_c_per_day": [
+          5,
+          11
+        ]
+      },
+      "forecasted": {
+        "tmin_c": 17,
+        "tmax_c": 31,
+        "rh_pct": 45,
+        "rain_mm": 1,
+        "wind_kmph": 14,
+        "solar_wm2": 330,
+        "et0_mm": 3.3,
+        "soil_moisture_pct": 17,
+        "soil_temp_c": 17,
+        "vpd_kpa": 1.3,
+        "leaf_wetness_hours": 0,
+        "uv_index": 7,
+        "gdd_base10_c_per_day": 8.9,
+        "ndvi": 0.64,
+        "pest_disease_risk_hint": {
+          "grain_shrivel": 0.22
+        }
+      }
+    },
+    {
+      "name": "Grain Filling (Dough)",
+      "duration_days": 10,
+      "importance_weight": 1.5,
+      "ideal": {
+        "tmin_c": [
+          10,
+          18
+        ],
+        "tmax_c": [
+          18,
+          32
+        ],
+        "rh_pct": [
+          35,
+          65
+        ],
+        "rain_mm": [
+          0,
+          5
+        ],
+        "wind_kmph": [
+          0,
+          22
+        ],
+        "solar_wm2": [
+          210,
+          420
+        ],
+        "et0_mm": [
+          2.4,
+          4.0
+        ],
+        "soil_moisture_pct": [
+          14,
+          20
+        ],
+        "soil_temp_c": [
+          10,
+          18
+        ],
+        "vpd_kpa": [
+          0.8,
+          1.6
+        ],
+        "leaf_wetness_hours": [
+          0,
+          2
+        ],
+        "uv_index": [
+          2,
+          8
+        ],
+        "gdd_base10_c_per_day": [
+          5,
+          12
+        ]
+      },
+      "forecasted": {
+        "tmin_c": 18,
+        "tmax_c": 33,
+        "rh_pct": 38,
+        "rain_mm": 0,
+        "wind_kmph": 16,
+        "solar_wm2": 350,
+        "et0_mm": 3.6,
+        "soil_moisture_pct": 15,
+        "soil_temp_c": 18,
+        "vpd_kpa": 1.6,
+        "leaf_wetness_hours": 0,
+        "uv_index": 8,
+        "gdd_base10_c_per_day": 9.5,
+        "ndvi": 0.58,
+        "pest_disease_risk_hint": {
+          "heat_stress": 0.28
+        }
+      }
+    },
+    {
+      "name": "Ripening",
+      "duration_days": 13,
+      "importance_weight": 0.9,
+      "ideal": {
+        "tmin_c": [
+          22.052364349365234
+        ],
+        "tmax_c": [
+          28.932552337646484
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          5.008200168609619
+        ],
+        "wind_kmph": [
+          4.918750762939453
+        ],
+        "solar_wm2": [
+          576
+        ]
+      },
+      "forecasted": {}
+    },
+    {
+      "name": "Harvest",
+      "duration_days": 7,
+      "importance_weight": 0.8,
+      "ideal": {
+        "tmin_c": [
+          21.29361343383789
+        ],
+        "tmax_c": [
+          28.854276657104492
+        ],
+        "rh_pct": [
+          65
+        ],
+        "rain_mm": [
+          4.949030876159668
+        ],
+        "wind_kmph": [
+          4.973142623901367
+        ],
+        "solar_wm2": [
+          577
+        ]
+      },
+      "forecasted": {}
+    }
+  ],
+  "scoring": {
+    "feature_weights": {
+      "temperature": 0.4,
+      "rain": 0.15,
+      "humidity_vpd": 0.15,
+      "wind": 0.05,
+      "radiation_et0": 0.1,
+      "soil": 0.1,
+      "leaf_wetness": 0.03,
+      "uv": 0.02
+    },
+    "aggregation": "overall = 100 * sum(stage_safety * importance_weight) / sum(importance_weight)",
+    "notes": "Feature matches map to [1.0, 0.7, 0.4, 0.0] for inside/mild/moderate/severe deviation from 'ideal' ranges."
+  }
+}
