@@ -73,7 +73,7 @@ export default function ChatExpert() {
       const response = await axios.post('https://fasalsaathi-ai.onrender.com/get', {
         msg: content,
       });
-      const botResponse = {
+      const botResponse: ChatMessage = {
         id: `assistant-${Date.now()}`,
         role: 'assistant',
         content: response.data.answer,
